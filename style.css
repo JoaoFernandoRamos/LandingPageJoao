@@ -1,0 +1,87 @@
+body {
+    background: #74d5d5
+}
+.cabeçalho {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.cabeçalho a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.contato h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+}
+.contato p {
+    font-size: 16px;
+    color: #ffffff;
+    text-align: center;
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+input[type="submit"] {
+    background-color: #564f4f;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+footer {
+    text-align: center;
+    padding: 0,8px;
+    background-color: #ffffff;
+}
+
+#cursos table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+#cursos th {
+    background-color: #464646;
+    color: #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+#cursos td {
+    border: 1px solid #ffffff; 
+    padding: 10px;
+}
+#cursos th,
+#cursos td {
+    text-align: left;
+}
+#cursos h2 {
+    text-align: center;
+}
+
+#sobre p {
+    max-width: 1400px;
+    margin: 0 auto;
+    color: #000;
+}
+#sobre h2 {
+    text-align: center;
+    color: #000;
+}

@@ -91,12 +91,13 @@ footer {
     text-align: center;
     padding: 0,8px;
     background-color: #ffffff;
+    border-radius: 5px;
 }
 
 #cursos table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 #cursos th {
     background-color: #464646;
@@ -105,7 +106,7 @@ footer {
     text-align: left;
 }
 #cursos td {
-    border: 1px solid #ffffff; 
+    border: 1px solid #464646; 
     padding: 10px;
 }
 #cursos th,

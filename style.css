@@ -55,7 +55,7 @@ section {
     transition: color 0.3s;
 }
 .cabeçalho a:hover {
-    color: #ff9900; /* Cor em hover */
+    color: #ff9900;
 }
 
 form {

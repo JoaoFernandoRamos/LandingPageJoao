@@ -35,7 +35,7 @@ header {
     font-weight: bold;
     text-transform: uppercase;
     color: #ffffff;
-    margin-left: -550px;
+    margin: auto;
 }
 .nome::before {
     content: "<";
@@ -85,14 +85,6 @@ section h2 {
     height: auto;
     margin: 10px;
     max-width: 100%;
-}
-.imagem-expansivel {
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
-
-.imagem-expansivel:hover {
-    transform: scale(1.1);
 }
 #audioVideo {
     display: flex;
@@ -242,4 +234,11 @@ section h1 {
         max-width: 800px;
         width: 100%;
         height: auto; 
+}
+
+@media screen and (max-width: 660px) {
+    .logoFlamengo,header,.nome,.foto,#foto-e-resumo,section,#form {
+        width: 100%;
+        flex-direction: column;
+    }
 }

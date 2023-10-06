@@ -139,7 +139,7 @@ audio {
 }
 
 form {
-    max-width: 400px;
+    max-width: 100%;
     margin: 0 auto;
     padding: 40px;
 }
@@ -163,8 +163,8 @@ input[type="submit"] {
     cursor: pointer;
 }
 #form {
-margin-left: 500px;
-margin-right: 500px;
+margin-left: 100px auto;
+margin-right: 100px auto;
 padding: auto;
 background-color: rgba(0, 0, 0, 0.692);
 border-radius: 10px;

@@ -1,23 +1,118 @@
 body {
     font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #333, #f0f0f0);
     margin: 0;
-    padding: 0;
+    background-color: #ffffff;
+    padding: 0;;
+    color: #fff;
+    background-image: url('fundoFlamengo.jpg');
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
+    background-color: rgba(255, 0, 0, 0.5);
 }
+header {
+    background:linear-gradient(to bottom,#ff0000, #520000), rgba(255, 0, 0, 0.442);
+    display: flex;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);   
+    padding-bottom: 10px;
+    padding-top: 10px;
+    margin: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.logoFlamengo {
+    max-width: 50px;
+    width: 50px;
+    height: auto;
+    margin-left: 15px;
+}
+.nome {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-left: -550px;
+}
+.nome::before {
+    content: "<";
+    color: #fff;
+}
+.nome::after {
+    content: "/>";
+    color: #fff;
+    margin-left: -20px;
+}
+header ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+    display: flex; 
+}
+
+header ul li {
+    margin-right: 20px; 
+}
+
+header ul li a {
+    text-decoration: none; 
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header ul li a:hover {
+    color: #000000;
+}
+
 section {
-    margin: 30px;
+    margin: 50px;
     padding: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: rgba(0, 0, 0, 0.692);
+    border-radius: 10px;
+}
+section h2 {
+    color: #ff0000;
+}
+#foto-e-resumo {
+    display: flex;
+}
+.foto {
+    width: 300px;
+    height: auto;
+    margin: 10px;
+    max-width: 100%;
+}
+.imagem-expansivel {
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.imagem-expansivel:hover {
+    transform: scale(1.1);
+}
+#audioVideo {
+    display: flex;
+}
+.video {
+    margin-left: 100px;
+}
+audio {
+    margin-top: 50px;
 }
 
 .menu-lateral {
     position: fixed;
     top: 50%;
-    right: -180px;
-    background-color: #333;
-    color: #fff;
+    right: -160px;
+    background-image: url(flamengoFundo2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; 
+    background-attachment: fixed;
+    color: #ffffff; color: white; text-shadow: black 0.2em 0.2em 0.3em;
     padding: 10px;
     border-radius: 5px;
     transform: translateY(-50%);
@@ -38,34 +133,23 @@ section {
     transition: background-color 0.3s;
 }
 .menu-conteudo a:hover {
-    background-color: #555;
+    color: #000000;
 }
 
-.cabeçalho {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    position: relative;
+#hobby-esporte-musica ul {
+    list-style: none;
+    padding: 0;
 }
-.cabeçalho a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 10px;
-    transition: color 0.3s;
-}
-.cabeçalho a:hover {
-    color: #ff9900;
+
+#hobby-esporte-musica li {
+    margin: 0;
+    padding: 0;
 }
 
 form {
     max-width: 400px;
     margin: 0 auto;
     padding: 40px;
-    background-color: #fff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    
 }
 input[type="text"],
 input[type="tel"],
@@ -79,49 +163,83 @@ textarea {
     border-radius: 4px;
 }
 input[type="submit"] {
-    background-color: #564f4f;
+    background-color: #ff0000;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
 }
-
+#form {
+margin-left: 500px;
+margin-right: 500px;
+padding: auto;
+background-color: rgba(0, 0, 0, 0.692);
+border-radius: 10px;
+}
 footer {
     text-align: center;
-    padding: 0,8px;
-    background-color: #ffffff;
+    padding: 0,8px; 
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-width: 500px;
+}
+
+.progress {
+    background-color: #ff0000;
+    color: #fff;
+    text-align: center;
     border-radius: 5px;
 }
 
-#cursos table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-top: 40px;
-}
-#cursos th {
-    background-color: #464646;
-    color: #ffffff;
-    padding: 10px;
-    text-align: left;
-}
-#cursos td {
-    border: 1px solid #464646; 
-    padding: 10px;
-}
-#cursos th,
-#cursos td {
-    text-align: left;
-}
-#cursos h2 {
-    text-align: center;
-}
 #sobre p {
     max-width: 1400px;
     margin: 0 auto;
-    color: #000000;
+    color: #ffffff;
 }
-#sobre h2 {
-    text-align: center;
-    color: #000;
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+table, th, td {
+    border: 1px solid #ff0000
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background: linear-gradient(to bottom,#ff0000, #520000), rgba(255, 0, 0, 0.442);
+    color: #fff;
+}
+
+tr {
+    background-color: #00000047;
+}
+
+section h1 {
+    color: #ff0000;
+}
+.github {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+    }
+    
+.fotoGit {
+        max-width: 800px;
+        width: 100%;
+        height: auto; 
 }

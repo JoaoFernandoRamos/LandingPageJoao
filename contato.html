@@ -7,13 +7,26 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <div class="cabeçalho">
-        <a href="index.html">HOME</a>
-        <a href="curriculo.html">CURRÍCULO</a>
-        <a href="github.html">GITHUB</a>
-        <a href="serviços.html">SERVIÇOS</a>
-        <a href="contato.html">CONTATO</a>
+    <header>
+        <div>
+            <img src="logoFlamengo.png" class="logoFlamengo">
+        </div>
+        <div class="nome">
+        <ul>
+            <li>João</li>
+            <li>Fernando</li>
+            <li>Ramos</li>
+        </ul>
     </div>
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="curriculo.html">CURRÍCULO</a></li>
+            <li><a href="github.html">GITHUB</a></li>
+            <li><a href="serviços.html">SERVIÇOS</a></li>
+            <li><a href="contato.html">CONTATO</a></li>
+        </ul>
+    </header>
+<section id="form">
     <form method="POST">
         <h1>Entre em Contato</h1>
         <p>Preencha o formulário abaixo para entrar em contato comigo.</p>
@@ -28,27 +41,31 @@
             <option value="pessoa_fisica">Pessoa Física</option>
             <option value="pessoa_juridica">Pessoa Jurídica</option>
     </select><br>
-        <label for="horario_contato">Melhor Horário de Contato:</label>
+        <label for="horario_contato">Melhor horário de Contato:</label><br>
         <input type="radio" id="manha" name="horario_contato" value="manha">
         <label for="manha">Manhã</label>
         <input type="radio" id="tarde" name="horario_contato" value="tarde">
         <label for="tarde">Tarde</label>
         <input type="radio" id="noite" name="horario_contato" value="noite">
         <label for="noite">Noite</label><br>
+        <br>
         <label for="tipo_servico">Qual o tipo de serviço que deseja?</label><br>
         <input type="radio" id="servico_a" name="tipo_servico" value="Serviço A">
-        <label for="servico_a">Criação de sites de uma página</label><br>
+        <label for="servico_a">Desenvolvimento de HomePage</label><br>
         <input type="radio" id="servico_b" name="tipo_servico" value="Serviço B">
-        <label for="servico_b">Otimização de sites para dispositivos móveis</label><br>
+        <label for="servico_b">Página estática HTML e CSS</label><br>
         <input type="radio" id="servico_c" name="tipo_servico" value="Serviço C">
-        <label for="servico_c">Atualização e manutenção de sites</label><br>
+        <label for="servico_c">Página dinâmica</label><br>
+        <input type="radio" id="servico_c" name="tipo_servico" value="Serviço D">
+        <label for="servico_d">Página super avançada</label><br>
         <br>
-        <label for="descricao_servico">Breve Descrição do Serviço Desejado:</label><br>
+        <label for="descricao_servico">Breve descrição do Serviço desejado:</label><br>
         <textarea id="descricao_servico" name="descricao_servico" rows="4" cols="50" required></textarea><br>
         <input type="submit" value="Enviar">
     </form>
-    <footer>
-        <p>&copy; 2023 João Fernando Ramos</p>
-    </footer>
+</section>
+<footer>
+    <span>© 2023 João Fernando Ramos</span>
+</footer>
 </body>
 </html>

@@ -7,33 +7,64 @@
     <link rel="stylesheet" href="style.css"> 
 </head>
 <body>
-    <div class="cabeçalho">
-        <a href="index.html">HOME</a>
-        <a href="curriculo.html">CURRÍCULO</a>
-        <a href="github.html">GITHUB</a>
-        <a href="serviços.html">SERVIÇOS</a>
-        <a href="contato.html">CONTATO</a>
+ <header>
+    <div>
+        <img src="logoFlamengo.png" class="logoFlamengo">
     </div>
+    <div class="nome">
+    <ul>
+        <li>João</li>
+        <li>Fernando</li>
+        <li>Ramos</li>
+    </ul>
+</div>
+    <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="curriculo.html">CURRÍCULO</a></li>
+        <li><a href="github.html">GITHUB</a></li>
+        <li><a href="serviços.html">SERVIÇOS</a></li>
+        <li><a href="contato.html">CONTATO</a></li>
+    </ul>
+</header>
     <div class="menu-lateral">
         <div class="menu-icon">&#9776;</div>
         <div class="menu-conteudo">
-            <a href="#foto-e-historia">Foto e História</a>
+            <a href="#foto-e-resumo">Foto e Resumo</a>
             <a href="#habilidades-pessoais">Habilidades Pessoais</a>
-            <a href="#hobby-esporte-musica">Hobby, Esporte e Música</a>
             <a href="#vida-academica">Vida Acadêmica</a>
             <a href="#eventos">Eventos</a>
             <a href="#materias-faculdade">Matérias na Faculdade</a>
             <a href="#planos-futuro">Planos para o Futuro</a>
-            <a href="#resumo-historia">Resumo da História</a>
         </div>
     </div>
 
-    <section id="foto-e-historia">
-        <h2>Foto e História</h2>
-        <div class="foto">
-            <img src="joao-fernando-ramos.jpg" alt="João Fernando Ramos">
+    <section>
+        <h2>Resumo</h2>
+        <div id="foto-e-resumo">
+            <div class="imagem-expansivel">
+            <img src="MinhaFoto.JPEG" alt="João Fernando Ramos" class="foto">
         </div>
-        <p>Olá, eu sou João Fernando Ramos Ribeiro. Nasci em Anchieta, no Espírito Santo, em 13 de julho de 2004, e cresci no bairro Jabaquara, no interior de Anchieta. Desde a infância, fui apaixonado por tecnologia e computadores.</p>
+        <ul>
+            <li>Me chamo João Fernando Ramos</li>
+            <li>Atualmente tenho 19 anos.</li>
+            <li>Estou cursando Ciências da Computação na UVV.</li>
+            <li>Tenho paixão por HTML, CSS e jogos de computador.</li>
+            <li>Meu irmão, que é da área de TI, foi minha inspiração.</li>
+            <li>Tenho planos de crescimento na área de tecnologia.</li>
+            <li>Sou torcedor do Mengão</li>
+            <br>
+            <br>
+            <div id="audioVideo">
+            <audio controls>
+                <source src="VocePensaQueOFlamengoÉTime.mp3" type="audio/mpeg"
+                class="audio">
+                Seu navegador não suporta a tag de áudio.</audio>
+            <br>
+            <iframe class="video" width="300" height="160" src="https://www.youtube.com/embed/zeJ3KpmgIwA" title="AMÉRICA DO SUL É RUBRO-NEGRA! Flamengo 2x1 River Plate - Final da Libertadores 2019 - Completo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>
+        </div>
+        </ul>
+        </div>
+        
     </section>
 
     <section id="habilidades-pessoais">
@@ -44,17 +75,6 @@
             <li>Jogos de computador (profissional em alguns jogos).</li>
             <li>Futebol (meu esporte favorito).</li>
             <li>Paixão por música e vídeo.</li>
-        </ul>
-    </section>
-    
-    <section id="hobby-esporte-musica">
-        <h2>Hobby, Esporte e Música</h2>
-        <p>Além da tecnologia, meus interesses incluem:</p>
-        <ul>
-            <li>Futebol - Sou torcedor do Flamengo.</li>
-            <li>Música favorita: "American Idiot".</li>
-            <li>Vídeo favorito: <br>
-                <iframe width="420" height="220" src="https://www.youtube.com/embed/KDYv0HJXo-c" title="Goodbye Counter-Strike: Global Offensive" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></li>
         </ul>
     </section>
     
@@ -109,20 +129,8 @@
             <li>Trabalhar para uma empresa internacional na área de tecnologia.</li>
         </ul>
     </section>
-    <section id="resumo-historia">
-        <h2>Resumo da História</h2>
-        <p>Para resumir minha história:</p>
-        <ul>
-            <li>Atualmente tenho 19 anos.</li>
-            <li>Meu irmão, que é da área de TI, foi minha inspiração.</li>
-            <li>Estou cursando Ciências da Computação na UVV.</li>
-            <li>Tenho paixão por HTML, CSS e jogos de computador.</li>
-            <li>Sou torcedor do Flamengo e minha musica preferida é "American Idiot".</li>
-            <li>Tenho planos de crescimento na área de tecnologia.</li>
-        </ul>
-    </section>
     <footer>
-        <p>© 2023 João Fernando Ramos. Todos os direitos reservados.</p>
+        <span>© 2023 João Fernando Ramos</span>
     </footer>
 </body>
 </html>

@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     background-color: #ffffff;
-    padding: 0;;
+    padding: 0;
     color: #fff;
     background-image: url('fundoFlamengo.jpg');
     background-size: cover;
@@ -16,7 +16,7 @@ header {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);   
     padding-bottom: 10px;
     padding-top: 10px;
-    margin: 0;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
@@ -34,18 +34,11 @@ header {
     font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    color: #ffffff;
+    color: #000000;
     margin: auto;
+    text-align: auto;
 }
-.nome::before {
-    content: "<";
-    color: #fff;
-}
-.nome::after {
-    content: "/>";
-    color: #fff;
-    margin-left: -20px;
-}
+
 header ul {
     list-style: none; 
     padding: 0; 
@@ -83,7 +76,7 @@ section h2 {
 .foto {
     width: 300px;
     height: auto;
-    margin: 10px;
+    margin: 0px;
     max-width: 100%;
 }
 #audioVideo {
@@ -236,9 +229,54 @@ section h1 {
         height: auto; 
 }
 
-@media screen and (max-width: 660px) {
-    .logoFlamengo,header,.nome,.foto,#foto-e-resumo,section,#form {
+@media (min-width: 768px) and (max-width: 991px) {
+    body,.logoFlamengo,header,.nome,video,#foto-e-resumo,section,h2,#form {
         width: 100%;
         flex-direction: column;
+        margin: 0px;
+        padding: 3px;
+        align-items: center;
+    }}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    body,.logoFlamengo,header,.nome,video,#foto-e-resumo,section,h2,#form {
+        width: 100%;
+        flex-direction: column;
+        margin: 0px;
+        padding: 3px;
+        align-items: center;
+    }}
+@media (min-width: 992px) and (max-width: 1199px){
+    #audiovideo, .video {
+        margin-left: -300px;
+        margin-top: 50px;
+    }}
+@media (min-width: 992px) and (max-width: 1199px){
+    audio {
+        margin-top: -20px;
+    }}
+
+@media screen and (max-width: 900px) {
+    #foto-e-resumo, #audioVideo {
+        flex-direction: column !important;
     }
-}
+
+    #audioVideo iframe {
+        margin: 0;
+        max-width: 100%;
+    }
+
+    #audioVideo audio {
+        max-width: 100%;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+    }
+
+    header ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }}
